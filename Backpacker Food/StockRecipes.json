@@ -1,0 +1,42 @@
+[
+    {
+        "Name":"Vegan Porridge",
+        "Ingredients":["Oats", "Bananas", "Ricemilk", "Jam"]
+    },
+    {
+        "Name":"Not Vegan Porridge",
+        "Ingredients":["Oats", "Bananas", "Milk", "Jam", "Bacon"]
+    },
+    {
+        "Name":"Amateur Dal",
+        "Ingredients":["Lentils", "Tomatos", "Onions", "Flatbread", "Currypowder", "Chillipowder", "Salt"]
+    },
+    {
+        "Name":"Chicken & Cream Pasta",
+        "Ingredients":["Penne", "Tomatos", "Chicken broth", "Cream", "Bacon", "Spinach", "Peas", "Salt", "Pepper"]
+    },
+    {
+        "Name":"Pasta with Tuna",
+        "Ingredients":["Penne", "Tuna", "Pesto", "Salt"]
+    },
+    {
+        "Name":"Curry Chicken",
+        "Ingredients":["Coconut Cream", "Currypowder", "Pineaplle", "Chicken Breast"]
+    },
+    {
+        "Name":"Fried Rice",
+        "Ingredients":["Rice", "Soy Sauce", "Frozen Vegetables", "Eggs"]
+    },
+    {
+        "Name":"Chicken Wraps",
+        "Ingredients":["Iceberg Salad", "Canned Corn", "Chicken Breast"]
+    },
+    {
+        "Name":"Classic Pancakes",
+        "Ingredients":["Eggs", "Flour", "Milk", "Oats"]
+    },
+
+]
+
+
+

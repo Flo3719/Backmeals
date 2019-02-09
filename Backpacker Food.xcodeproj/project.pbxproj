@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37054C64407E992B1A0423A5 /* Pods_Backpacker_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91DF220AEE32AB53728B469F /* Pods_Backpacker_Food.framework */; };
+		47EE5D0608104891FF5532CA /* Pods_Backpacker_FoodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E328ECBC32050D14C0C6F0E /* Pods_Backpacker_FoodUITests.framework */; };
+		8509195B21F2D6AD00C0146E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509195A21F2D6AD00C0146E /* AppDelegate.swift */; };
+		8509195D21F2D6AD00C0146E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509195C21F2D6AD00C0146E /* ViewController.swift */; };
+		8509196021F2D6AD00C0146E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8509195E21F2D6AD00C0146E /* Main.storyboard */; };
+		8509196221F2D6AD00C0146E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8509196121F2D6AD00C0146E /* Assets.xcassets */; };
+		8509196521F2D6AD00C0146E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8509196321F2D6AD00C0146E /* LaunchScreen.storyboard */; };
+		8509197021F2D6AD00C0146E /* Backpacker_FoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509196F21F2D6AD00C0146E /* Backpacker_FoodTests.swift */; };
+		8509197B21F2D6AD00C0146E /* Backpacker_FoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509197A21F2D6AD00C0146E /* Backpacker_FoodUITests.swift */; };
+		8509198921F2D8F200C0146E /* CupboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509198821F2D8F200C0146E /* CupboardViewController.swift */; };
+		8509198B21F2D90300C0146E /* RecepiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509198A21F2D90300C0146E /* RecepiesViewController.swift */; };
+		8509198D21F2D90E00C0146E /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509198C21F2D90E00C0146E /* ShoppingListViewController.swift */; };
+		8509198F21F2DD9900C0146E /* AddCupboardItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509198E21F2DD9900C0146E /* AddCupboardItemViewController.swift */; };
+		8509199121F2F7FE00C0146E /* RecepieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509199021F2F7FE00C0146E /* RecepieDetailViewController.swift */; };
+		8558DA7122046406007F53E2 /* IngredientUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8558DA7022046406007F53E2 /* IngredientUIView.swift */; };
+		8564998F220D776200450D5A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564998E220D776200450D5A /* SettingsViewController.swift */; };
+		85649991220E4D5400450D5A /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 85649990220E4D5400450D5A /* readme.md */; };
+		8574A672220F9633005F9585 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8574A671220F9632005F9585 /* .gitignore */; };
+		8574A674220F9B1A005F9585 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8574A673220F9B1A005F9585 /* GoogleMobileAds.framework */; };
+		85954B7721FE6F3600996B00 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85954B7621FE6F3600996B00 /* GoogleService-Info.plist */; };
+		859783B122066B9E00270A01 /* StockRecipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 859783B022066B9E00270A01 /* StockRecipes.json */; };
+		85BB5B4322055E7B0045A0A5 /* RecipeInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB5B4222055E7B0045A0A5 /* RecipeInstructionsViewController.swift */; };
+		85DF401F21F4478A001832AC /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DF401E21F4478A001832AC /* NewRecipeViewController.swift */; };
+		85DF402121F6F298001832AC /* AddShoppingItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85DF402021F6F298001832AC /* AddShoppingItemViewController.swift */; };
+		85E7DCB421FD1DBC00EC479F /* HVDComicSerifPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85E7DCB321FD1DBB00EC479F /* HVDComicSerifPro.otf */; };
+		85EE013221FC196400939635 /* Quicksand-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 85EE013121FC196400939635 /* Quicksand-Regular.otf */; };
+		85F4D84B21FBDD4200FDE1F0 /* EmptybackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F4D84A21FBDD4200FDE1F0 /* EmptybackpackView.swift */; };
+		85F6B1E721F354A500D3006F /* Media in Resources */ = {isa = PBXBuildFile; fileRef = 85F6B1E621F354A500D3006F /* Media */; };
+		85F6B1EB21F3D65200D3006F /* TabControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F6B1EA21F3D65200D3006F /* TabControllerViewController.swift */; };
+		A575101E10400E2ED767495C /* Pods_Backpacker_FoodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF6BDD53D76AD00DC8F125A /* Pods_Backpacker_FoodTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8509196C21F2D6AD00C0146E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8509194F21F2D6AD00C0146E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8509195621F2D6AD00C0146E;
+			remoteInfo = "Backpacker Food";
+		};
+		8509197721F2D6AD00C0146E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8509194F21F2D6AD00C0146E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8509195621F2D6AD00C0146E;
+			remoteInfo = "Backpacker Food";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13CA2F0D5FE866284C0431B1 /* Pods-Backpacker FoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpacker FoodTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpacker FoodTests/Pods-Backpacker FoodTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E328ECBC32050D14C0C6F0E /* Pods_Backpacker_FoodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backpacker_FoodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF6BDD53D76AD00DC8F125A /* Pods_Backpacker_FoodTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backpacker_FoodTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8341D231F6C4D66C606B1A05 /* Pods-Backpacker FoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpacker FoodTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpacker FoodTests/Pods-Backpacker FoodTests.release.xcconfig"; sourceTree = "<group>"; };
+		837FAC893ACADB8CF1401C4D /* Pods-Backpacker FoodUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpacker FoodUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpacker FoodUITests/Pods-Backpacker FoodUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8509195721F2D6AD00C0146E /* Backpacker Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Backpacker Food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8509195A21F2D6AD00C0146E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8509195C21F2D6AD00C0146E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8509195F21F2D6AD00C0146E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8509196121F2D6AD00C0146E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8509196421F2D6AD00C0146E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8509196621F2D6AD00C0146E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8509196B21F2D6AD00C0146E /* Backpacker FoodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Backpacker FoodTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8509196F21F2D6AD00C0146E /* Backpacker_FoodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backpacker_FoodTests.swift; sourceTree = "<group>"; };
+		8509197121F2D6AD00C0146E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8509197621F2D6AD00C0146E /* Backpacker FoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Backpacker FoodUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8509197A21F2D6AD00C0146E /* Backpacker_FoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backpacker_FoodUITests.swift; sourceTree = "<group>"; };
+		8509197C21F2D6AD00C0146E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8509198821F2D8F200C0146E /* CupboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupboardViewController.swift; sourceTree = "<group>"; };
+		8509198A21F2D90300C0146E /* RecepiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepiesViewController.swift; sourceTree = "<group>"; };
+		8509198C21F2D90E00C0146E /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		8509198E21F2DD9900C0146E /* AddCupboardItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCupboardItemViewController.swift; sourceTree = "<group>"; };
+		8509199021F2F7FE00C0146E /* RecepieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepieDetailViewController.swift; sourceTree = "<group>"; };
+		8558DA7022046406007F53E2 /* IngredientUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientUIView.swift; sourceTree = "<group>"; };
+		8564998E220D776200450D5A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		85649990220E4D5400450D5A /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		8574A671220F9632005F9585 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8574A673220F9B1A005F9585 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = SOURCE_ROOT; };
+		85954B7621FE6F3600996B00 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		859783B022066B9E00270A01 /* StockRecipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StockRecipes.json; sourceTree = "<group>"; };
+		85BB5B4222055E7B0045A0A5 /* RecipeInstructionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInstructionsViewController.swift; sourceTree = "<group>"; };
+		85DF401E21F4478A001832AC /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
+		85DF402021F6F298001832AC /* AddShoppingItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShoppingItemViewController.swift; sourceTree = "<group>"; };
+		85E7DCB321FD1DBB00EC479F /* HVDComicSerifPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HVDComicSerifPro.otf; sourceTree = "<group>"; };
+		85EE013121FC196400939635 /* Quicksand-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.otf"; sourceTree = "<group>"; };
+		85F4D84A21FBDD4200FDE1F0 /* EmptybackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptybackpackView.swift; sourceTree = "<group>"; };
+		85F6B1E621F354A500D3006F /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Media; sourceTree = "<group>"; };
+		85F6B1EA21F3D65200D3006F /* TabControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabControllerViewController.swift; sourceTree = "<group>"; };
+		908B0114D75DBA908ACBCFF0 /* Pods-Backpacker FoodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpacker FoodUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpacker FoodUITests/Pods-Backpacker FoodUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91DF220AEE32AB53728B469F /* Pods_Backpacker_Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Backpacker_Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDD3FBFD0AB0A4DB5DEFBAE /* Pods-Backpacker Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpacker Food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Backpacker Food/Pods-Backpacker Food.debug.xcconfig"; sourceTree = "<group>"; };
+		F81E9515FB3335AA7910D546 /* Pods-Backpacker Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Backpacker Food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Backpacker Food/Pods-Backpacker Food.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8509195421F2D6AD00C0146E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8574A674220F9B1A005F9585 /* GoogleMobileAds.framework in Frameworks */,
+				37054C64407E992B1A0423A5 /* Pods_Backpacker_Food.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8509196821F2D6AD00C0146E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A575101E10400E2ED767495C /* Pods_Backpacker_FoodTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8509197321F2D6AD00C0146E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EE5D0608104891FF5532CA /* Pods_Backpacker_FoodUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085CF3E832D60C5BB4C443CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91DF220AEE32AB53728B469F /* Pods_Backpacker_Food.framework */,
+				6AF6BDD53D76AD00DC8F125A /* Pods_Backpacker_FoodTests.framework */,
+				4E328ECBC32050D14C0C6F0E /* Pods_Backpacker_FoodUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8509194E21F2D6AD00C0146E = {
+			isa = PBXGroup;
+			children = (
+				8574A671220F9632005F9585 /* .gitignore */,
+				85649990220E4D5400450D5A /* readme.md */,
+				8509195921F2D6AD00C0146E /* Backpacker Food */,
+				8509196E21F2D6AD00C0146E /* Backpacker FoodTests */,
+				8509197921F2D6AD00C0146E /* Backpacker FoodUITests */,
+				8509195821F2D6AD00C0146E /* Products */,
+				9C957611A415DC683FF7B6EF /* Pods */,
+				085CF3E832D60C5BB4C443CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8509195821F2D6AD00C0146E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8509195721F2D6AD00C0146E /* Backpacker Food.app */,
+				8509196B21F2D6AD00C0146E /* Backpacker FoodTests.xctest */,
+				8509197621F2D6AD00C0146E /* Backpacker FoodUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8509195921F2D6AD00C0146E /* Backpacker Food */ = {
+			isa = PBXGroup;
+			children = (
+				8574A673220F9B1A005F9585 /* GoogleMobileAds.framework */,
+				85EE013121FC196400939635 /* Quicksand-Regular.otf */,
+				85E7DCB321FD1DBB00EC479F /* HVDComicSerifPro.otf */,
+				85F6B1E621F354A500D3006F /* Media */,
+				8509195A21F2D6AD00C0146E /* AppDelegate.swift */,
+				8509195C21F2D6AD00C0146E /* ViewController.swift */,
+				8509195E21F2D6AD00C0146E /* Main.storyboard */,
+				8509196121F2D6AD00C0146E /* Assets.xcassets */,
+				8509196321F2D6AD00C0146E /* LaunchScreen.storyboard */,
+				8509196621F2D6AD00C0146E /* Info.plist */,
+				8509198821F2D8F200C0146E /* CupboardViewController.swift */,
+				85954B7621FE6F3600996B00 /* GoogleService-Info.plist */,
+				8509198A21F2D90300C0146E /* RecepiesViewController.swift */,
+				8509198C21F2D90E00C0146E /* ShoppingListViewController.swift */,
+				8509198E21F2DD9900C0146E /* AddCupboardItemViewController.swift */,
+				8509199021F2F7FE00C0146E /* RecepieDetailViewController.swift */,
+				85F6B1EA21F3D65200D3006F /* TabControllerViewController.swift */,
+				85DF401E21F4478A001832AC /* NewRecipeViewController.swift */,
+				85DF402021F6F298001832AC /* AddShoppingItemViewController.swift */,
+				85F4D84A21FBDD4200FDE1F0 /* EmptybackpackView.swift */,
+				8558DA7022046406007F53E2 /* IngredientUIView.swift */,
+				85BB5B4222055E7B0045A0A5 /* RecipeInstructionsViewController.swift */,
+				859783B022066B9E00270A01 /* StockRecipes.json */,
+				8564998E220D776200450D5A /* SettingsViewController.swift */,
+			);
+			path = "Backpacker Food";
+			sourceTree = "<group>";
+		};
+		8509196E21F2D6AD00C0146E /* Backpacker FoodTests */ = {
+			isa = PBXGroup;
+			children = (
+				8509196F21F2D6AD00C0146E /* Backpacker_FoodTests.swift */,
+				8509197121F2D6AD00C0146E /* Info.plist */,
+			);
+			path = "Backpacker FoodTests";
+			sourceTree = "<group>";
+		};
+		8509197921F2D6AD00C0146E /* Backpacker FoodUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8509197A21F2D6AD00C0146E /* Backpacker_FoodUITests.swift */,
+				8509197C21F2D6AD00C0146E /* Info.plist */,
+			);
+			path = "Backpacker FoodUITests";
+			sourceTree = "<group>";
+		};
+		9C957611A415DC683FF7B6EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBDD3FBFD0AB0A4DB5DEFBAE /* Pods-Backpacker Food.debug.xcconfig */,
+				F81E9515FB3335AA7910D546 /* Pods-Backpacker Food.release.xcconfig */,
+				13CA2F0D5FE866284C0431B1 /* Pods-Backpacker FoodTests.debug.xcconfig */,
+				8341D231F6C4D66C606B1A05 /* Pods-Backpacker FoodTests.release.xcconfig */,
+				837FAC893ACADB8CF1401C4D /* Pods-Backpacker FoodUITests.debug.xcconfig */,
+				908B0114D75DBA908ACBCFF0 /* Pods-Backpacker FoodUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8509195621F2D6AD00C0146E /* Backpacker Food */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8509197F21F2D6AD00C0146E /* Build configuration list for PBXNativeTarget "Backpacker Food" */;
+			buildPhases = (
+				F4C87A0543B01B4A9386DC77 /* [CP] Check Pods Manifest.lock */,
+				8509195321F2D6AD00C0146E /* Sources */,
+				8509195421F2D6AD00C0146E /* Frameworks */,
+				8509195521F2D6AD00C0146E /* Resources */,
+				A0F16FFB8E1782F57A361F99 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Backpacker Food";
+			productName = "Backpacker Food";
+			productReference = 8509195721F2D6AD00C0146E /* Backpacker Food.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8509196A21F2D6AD00C0146E /* Backpacker FoodTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8509198221F2D6AD00C0146E /* Build configuration list for PBXNativeTarget "Backpacker FoodTests" */;
+			buildPhases = (
+				D951876FE0784C460D445935 /* [CP] Check Pods Manifest.lock */,
+				8509196721F2D6AD00C0146E /* Sources */,
+				8509196821F2D6AD00C0146E /* Frameworks */,
+				8509196921F2D6AD00C0146E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8509196D21F2D6AD00C0146E /* PBXTargetDependency */,
+			);
+			name = "Backpacker FoodTests";
+			productName = "Backpacker FoodTests";
+			productReference = 8509196B21F2D6AD00C0146E /* Backpacker FoodTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8509197521F2D6AD00C0146E /* Backpacker FoodUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8509198521F2D6AD00C0146E /* Build configuration list for PBXNativeTarget "Backpacker FoodUITests" */;
+			buildPhases = (
+				BA8060C2BF7F3E2417543AE1 /* [CP] Check Pods Manifest.lock */,
+				8509197221F2D6AD00C0146E /* Sources */,
+				8509197321F2D6AD00C0146E /* Frameworks */,
+				8509197421F2D6AD00C0146E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8509197821F2D6AD00C0146E /* PBXTargetDependency */,
+			);
+			name = "Backpacker FoodUITests";
+			productName = "Backpacker FoodUITests";
+			productReference = 8509197621F2D6AD00C0146E /* Backpacker FoodUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8509194F21F2D6AD00C0146E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Florian Fahrenholz";
+				TargetAttributes = {
+					8509195621F2D6AD00C0146E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8509196A21F2D6AD00C0146E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8509195621F2D6AD00C0146E;
+					};
+					8509197521F2D6AD00C0146E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8509195621F2D6AD00C0146E;
+					};
+				};
+			};
+			buildConfigurationList = 8509195221F2D6AD00C0146E /* Build configuration list for PBXProject "Backpacker Food" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8509194E21F2D6AD00C0146E;
+			productRefGroup = 8509195821F2D6AD00C0146E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8509195621F2D6AD00C0146E /* Backpacker Food */,
+				8509196A21F2D6AD00C0146E /* Backpacker FoodTests */,
+				8509197521F2D6AD00C0146E /* Backpacker FoodUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8509195521F2D6AD00C0146E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8574A672220F9633005F9585 /* .gitignore in Resources */,
+				85E7DCB421FD1DBC00EC479F /* HVDComicSerifPro.otf in Resources */,
+				85649991220E4D5400450D5A /* readme.md in Resources */,
+				8509196521F2D6AD00C0146E /* LaunchScreen.storyboard in Resources */,
+				85F6B1E721F354A500D3006F /* Media in Resources */,
+				859783B122066B9E00270A01 /* StockRecipes.json in Resources */,
+				8509196221F2D6AD00C0146E /* Assets.xcassets in Resources */,
+				8509196021F2D6AD00C0146E /* Main.storyboard in Resources */,
+				85954B7721FE6F3600996B00 /* GoogleService-Info.plist in Resources */,
+				85EE013221FC196400939635 /* Quicksand-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8509196921F2D6AD00C0146E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8509197421F2D6AD00C0146E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0F16FFB8E1782F57A361F99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Backpacker Food/Pods-Backpacker Food-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Backpacker Food/Pods-Backpacker Food-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8060C2BF7F3E2417543AE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Backpacker FoodUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D951876FE0784C460D445935 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Backpacker FoodTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4C87A0543B01B4A9386DC77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Backpacker Food-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8509195321F2D6AD00C0146E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8509199121F2F7FE00C0146E /* RecepieDetailViewController.swift in Sources */,
+				8509198921F2D8F200C0146E /* CupboardViewController.swift in Sources */,
+				85F6B1EB21F3D65200D3006F /* TabControllerViewController.swift in Sources */,
+				85DF402121F6F298001832AC /* AddShoppingItemViewController.swift in Sources */,
+				8509195D21F2D6AD00C0146E /* ViewController.swift in Sources */,
+				8509198D21F2D90E00C0146E /* ShoppingListViewController.swift in Sources */,
+				85DF401F21F4478A001832AC /* NewRecipeViewController.swift in Sources */,
+				85BB5B4322055E7B0045A0A5 /* RecipeInstructionsViewController.swift in Sources */,
+				8509198F21F2DD9900C0146E /* AddCupboardItemViewController.swift in Sources */,
+				8564998F220D776200450D5A /* SettingsViewController.swift in Sources */,
+				8509198B21F2D90300C0146E /* RecepiesViewController.swift in Sources */,
+				85F4D84B21FBDD4200FDE1F0 /* EmptybackpackView.swift in Sources */,
+				8509195B21F2D6AD00C0146E /* AppDelegate.swift in Sources */,
+				8558DA7122046406007F53E2 /* IngredientUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8509196721F2D6AD00C0146E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8509197021F2D6AD00C0146E /* Backpacker_FoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8509197221F2D6AD00C0146E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8509197B21F2D6AD00C0146E /* Backpacker_FoodUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8509196D21F2D6AD00C0146E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8509195621F2D6AD00C0146E /* Backpacker Food */;
+			targetProxy = 8509196C21F2D6AD00C0146E /* PBXContainerItemProxy */;
+		};
+		8509197821F2D6AD00C0146E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8509195621F2D6AD00C0146E /* Backpacker Food */;
+			targetProxy = 8509197721F2D6AD00C0146E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8509195E21F2D6AD00C0146E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8509195F21F2D6AD00C0146E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8509196321F2D6AD00C0146E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8509196421F2D6AD00C0146E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8509197D21F2D6AD00C0146E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8509197E21F2D6AD00C0146E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8509198021F2D6AD00C0146E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBDD3FBFD0AB0A4DB5DEFBAE /* Pods-Backpacker Food.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DY7D37JL3J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Backpacker\\ Food",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Backpacker Food/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianfahrenholz.Backpacker-Food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8509198121F2D6AD00C0146E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F81E9515FB3335AA7910D546 /* Pods-Backpacker Food.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DY7D37JL3J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Backpacker\\ Food",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Backpacker Food/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianfahrenholz.Backpacker-Food";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8509198321F2D6AD00C0146E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13CA2F0D5FE866284C0431B1 /* Pods-Backpacker FoodTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Backpacker FoodTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianfahrenholz.Backpacker-FoodTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Backpacker Food.app/Backpacker Food";
+			};
+			name = Debug;
+		};
+		8509198421F2D6AD00C0146E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8341D231F6C4D66C606B1A05 /* Pods-Backpacker FoodTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Backpacker FoodTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianfahrenholz.Backpacker-FoodTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Backpacker Food.app/Backpacker Food";
+			};
+			name = Release;
+		};
+		8509198621F2D6AD00C0146E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837FAC893ACADB8CF1401C4D /* Pods-Backpacker FoodUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Backpacker FoodUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianfahrenholz.Backpacker-FoodUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Backpacker Food";
+			};
+			name = Debug;
+		};
+		8509198721F2D6AD00C0146E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908B0114D75DBA908ACBCFF0 /* Pods-Backpacker FoodUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Backpacker FoodUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "florianfahrenholz.Backpacker-FoodUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Backpacker Food";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8509195221F2D6AD00C0146E /* Build configuration list for PBXProject "Backpacker Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8509197D21F2D6AD00C0146E /* Debug */,
+				8509197E21F2D6AD00C0146E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8509197F21F2D6AD00C0146E /* Build configuration list for PBXNativeTarget "Backpacker Food" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8509198021F2D6AD00C0146E /* Debug */,
+				8509198121F2D6AD00C0146E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8509198221F2D6AD00C0146E /* Build configuration list for PBXNativeTarget "Backpacker FoodTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8509198321F2D6AD00C0146E /* Debug */,
+				8509198421F2D6AD00C0146E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8509198521F2D6AD00C0146E /* Build configuration list for PBXNativeTarget "Backpacker FoodUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8509198621F2D6AD00C0146E /* Debug */,
+				8509198721F2D6AD00C0146E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8509194F21F2D6AD00C0146E /* Project object */;
+}

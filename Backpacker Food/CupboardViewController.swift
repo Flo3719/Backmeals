@@ -49,9 +49,10 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
     }
     
     
-    func MealRecommendation() -> String{
+    func MealRecommendation() -> RecepieElement{
         
-        var recommendedDishString: String = ""
+       // var recommendedDishString: String = ""
+        var recommendedDishElement: RecepieElement = (RecepieElement(Name:"", Ingredients:[]))
         
         CupboardItems = readCupboardItems()
         var LoadedRecipesSections: [RecipeSection] = ReadRecipesSections()
@@ -94,7 +95,8 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
                     
                     if(RecipeScore <= BestRecipeScore){
                         //RecipeScore -= 1
-                        recommendedDishString = LocalRecipes![i-1].Name!
+                        //recommendedDishString = LocalRecipes![i-1].Name!
+                        recommendedDishElement = LocalRecipes![i-1]
                         BestRecipeScore = RecipeScore
                     }
                     print("123 Best recipe score:   ", BestRecipeScore)
@@ -110,7 +112,7 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
         
         
     
-        return recommendedDishString
+        return recommendedDishElement
     }
     
 
@@ -247,7 +249,7 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
     
     func refreshMealRecommondation(){
         
-        let recommendedMealTitle: String! = MealRecommendation() 
+        let recommendedMealTitle: String! = MealRecommendation().Name!
         
         RecommendedMealOutlet.setTitle(recommendedMealTitle, for: .normal)
         print("3719: ", recommendedMealTitle)
@@ -287,6 +289,13 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "GoToRecipeDetailsFromBackpack"){
+            var vc = segue.destination as! RecepieDetailViewController
+            vc.PreviousVCName = "Backpack"
+        }
     }
     
 

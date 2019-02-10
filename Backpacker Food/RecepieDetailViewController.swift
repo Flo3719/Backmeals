@@ -10,7 +10,7 @@ import UIKit
 
 class RecepieDetailViewController: UIViewController {
 
-    
+    var PreviousVCName = "unknown"
     
     var NeededThingsArray: [String] = []
     
@@ -48,13 +48,30 @@ class RecepieDetailViewController: UIViewController {
         
     }
     
+    override func viewDidLoad() {
 
+    }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("Previous VC:", PreviousVCName)
+    }
 
-
+    
+    func LoadOwnedIngredients() -> [String]{
+        //Load Ingredients from Cupboard (CupboardIngredients)
+        var LoadedIngredients = UserDefaults.standard.object(forKey: "BackpackItems") as? [String] ?? ["nil"]
+        return LoadedIngredients
+    }
+    
+    func DisplayRecipeDetails(){
+        
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
        
-
         
         var InstanceOfRecipes = RecepiesViewController()
         var LoadedRecipes: [RecepieElement] = InstanceOfRecipes.readLocalRecipes()
@@ -64,44 +81,66 @@ class RecepieDetailViewController: UIViewController {
         
         print("Loaded Recipes: ", LoadedRecipes)
        
-
         
-        //Load Ingredients from Cupboard (CupboardIngredients)
-        var LoadedIngredients = UserDefaults.standard.object(forKey: "BackpackItems") as? [String] ?? ["nil"]
+        let LoadedIngredients = LoadOwnedIngredients()
+        
+        
         print("LoadedIngredients: ", LoadedIngredients)
         
         //The owned ingredients for this recepie will be saved in this var
         var IHaveThis: [String] = []
         
-
+        //Set the current recipe to either the cell that was tappen on or the Chefs Recommendation
+        var CurrentRecipe: RecepieElement
+        if(PreviousVCName == "RecipesList"){
+            //Previous Controller is Recipes: (tapped on cell):
+            CurrentRecipe = AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow]
+        }else if(PreviousVCName == "Backpack"){
+            //Previous controller is Backpack: (tapped on chef recommendation):
+            var InstanceOfBackpack = CupboardViewController()
+            CurrentRecipe = InstanceOfBackpack.MealRecommendation()
+        }else{
+            var InstanceOfBackpack = CupboardViewController()
+            CurrentRecipe = InstanceOfBackpack.MealRecommendation()
+        }
         //Show name of the dish at the top
-        RecepieNameTitle.text = AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow].Name
+        RecepieNameTitle.text = CurrentRecipe.Name
        
 
         // Loop Through alle ingredients
-        var IngredientCount = AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow].Ingredients.count
+        var IngredientCount = CurrentRecipe.Ingredients.count
         //var IngredientCount = LoadedRecipes[recepieIndexRow].Ingredients.count
         print("IngredientCount: ",IngredientCount)
         var IngredientsLabelText = ""
         var NeededIngredientsLabelText = ""
         for i in 1...IngredientCount{
             //Check if ingredient is NOT in Cupboard and then add it to "Need to buy" list
-            if !LoadedIngredients.contains(AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow].Ingredients[i-1]){
+            if !LoadedIngredients.contains(CurrentRecipe.Ingredients[i-1]){
                 //print("DU BRAUCHST: ", LoadedRecipes[recepieIndex].Ingredients[i-1])
                 
                 //Ad Ingredients that are needed to the Label text that shows these.
-                NeededIngredientsLabelText += AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow].Ingredients[i-1]
+                NeededIngredientsLabelText += CurrentRecipe.Ingredients[i-1]
                 NeededIngredientsLabelText += ", "
-                NeededThingsArray.append(AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow].Ingredients[i-1])
+                NeededThingsArray.append(CurrentRecipe.Ingredients[i-1])
             }
 
            // print("DU HAST: ", LoadedRecipes[recepieIndex].Ingredients[i-1])
 
-            IngredientsLabelText += AllRecipes[recepieIndexSection].SectionObjects[recepieIndexRow].Ingredients[i-1]
+            IngredientsLabelText += CurrentRecipe.Ingredients[i-1]
             IngredientsLabelText += ", "
             
         }
         AllIngredientsList.text = IngredientsLabelText
+        
+        AllIngredientsAvailable(NeededIngredientsLabelText: NeededIngredientsLabelText)
+
+    }
+    
+    func PreviousControllerIsRecipe(){
+        
+    }
+    
+    func AllIngredientsAvailable(NeededIngredientsLabelText: String){
         //if nothing is needed show text "You have all needed Ingredients"
         // and hide the headline "From that you need to Buy"
         if(NeededIngredientsLabelText == ""){
@@ -117,13 +156,6 @@ class RecepieDetailViewController: UIViewController {
             ChefsLabel.isHidden = true
             AddToListButtonOutlet.isHidden = false
         }
-        //Set the text of the label that shows the ingredients I aleady have
-        
-        
-        
-        
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

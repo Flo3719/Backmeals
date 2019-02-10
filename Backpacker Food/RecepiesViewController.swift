@@ -307,6 +307,13 @@ class RecepiesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "GoToRecepieDetails"){
+            var vc = segue.destination as! RecepieDetailViewController
+            vc.PreviousVCName = "RecipesList"
+        }
+    }
+    
   
 
 //END OF CLASS

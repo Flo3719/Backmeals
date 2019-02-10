@@ -35,6 +35,6 @@ you can use the `Add to Shoppinglist` Button to add all these Ingredients you do
 A simple list of the items you want to buy. Swipe left on an item to delete it or swipe right on an item to delete it from the shoppinglist and add it to your backpack "buy". You can add items by taping on the "+" in the navigation bar.
 
 # License
-Licensed under [ MIT License ](https://choosealicense.com/licenses/mit/#)
+Licensed under [ GNU General Public License v3.0 ](https://choosealicense.com/licenses/gpl-3.0/)
 
 Thank you for the icons provided by [Iconshock](https://www.iconshock.com)

@@ -35,6 +35,7 @@ class NewRecipeViewController: UIViewController {
     @IBAction func SuggestionButtonAction(_ sender: Any) {
         if(SuggestionButtonOutlet.titleLabel!.text != ""){
             IngredientTextfield.text = SuggestionButtonVar
+            AddIngredientButton(self)
         }
     }
     

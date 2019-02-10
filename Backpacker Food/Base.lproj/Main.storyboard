@@ -127,6 +127,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Shopping List" image="ShoppinglistIcon" selectedImage="ShoppinglistIcon" id="rnQ-Xh-m72"/>
                     <navigationItem key="navigationItem" title="Shoppinglist" id="2a6-Br-GE2">
+                        <barButtonItem key="leftBarButtonItem" image="gear 32px" id="OzQ-V1-eZ6">
+                            <connections>
+                                <segue destination="OzY-8z-KvP" kind="show" id="crb-3B-lpa"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ln1-gt-E3b">
                             <color key="tintColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -769,6 +774,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Recipes" image="RecipesIcon" selectedImage="RecipesIcon" id="Kzr-Lc-kNX"/>
                     <navigationItem key="navigationItem" title="Recipes" id="p8s-tf-Smc">
+                        <barButtonItem key="leftBarButtonItem" image="gear 32px" id="SPd-zs-xFc">
+                            <connections>
+                                <segue destination="OzY-8z-KvP" kind="show" id="Mb7-RO-7vZ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="LZ2-Cf-Ahh">
                             <color key="tintColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -814,9 +824,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Recipe Details" id="zil-nd-aFJ">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="wl1-bJ-5yl"/>
-                                    </navigationItem>
+                                    <navigationItem title="Recipe Details" id="zil-nd-aFJ"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1F-g0-4wt">
@@ -1335,8 +1343,9 @@ AAAAAAAAAAAALHU
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ven-1B-icU"/>
-        <segue reference="A8E-op-aWW"/>
+        <segue reference="GW0-hr-wP9"/>
         <segue reference="hY7-nP-AR0"/>
         <segue reference="QxO-ib-Jvl"/>
+        <segue reference="crb-3B-lpa"/>
     </inferredMetricsTieBreakers>
 </document>

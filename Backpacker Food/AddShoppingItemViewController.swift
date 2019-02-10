@@ -28,6 +28,7 @@ class AddShoppingItemViewController: UIViewController {
     @IBAction func SuggestionButtonAction(_ sender: Any) {
         if(SuggestionButtonOutlet.titleLabel!.text != ""){
             AddShoppingField.text = SuggestionButtonVar
+            AddShoppingButton(self)
         }
     }
     

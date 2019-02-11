@@ -33,7 +33,7 @@ var RecipeSectionsArray = [RecipeSection]()
 
 
 
-class RecepiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, GADBannerViewDelegate  {
+class RecepiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
 
     //UI Elements
@@ -46,7 +46,7 @@ class RecepiesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     
 
-    @IBOutlet weak var Mybanner: GADBannerView!
+   // @IBOutlet weak var Mybanner: GADBannerView!
     
     @IBOutlet weak var NoRecipesView: UIView!
     
@@ -147,15 +147,15 @@ class RecepiesViewController: UIViewController, UITableViewDataSource, UITableVi
         self.RecepiesTableView.tableFooterView = UIView()
         
         
-        //REquest
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID, "042A0B3BD2278001419902288093126736463A5764274669"]
-        
-        //Set up ad
-        Mybanner.adUnitID = "ca-app-pub-9665154923016795/9372565555"
-        Mybanner.rootViewController = self
-        Mybanner.delegate = self
-        Mybanner.load(request)
+//        //REquest
+//        let request = GADRequest()
+//        request.testDevices = [kGADSimulatorID, "042A0B3BD2278001419902288093126736463A5764274669"]
+//
+//        //Set up ad
+//        Mybanner.adUnitID = "ca-app-pub-9665154923016795/9372565555"
+//        Mybanner.rootViewController = self
+//        Mybanner.delegate = self
+//        Mybanner.load(request)
         
 
     }

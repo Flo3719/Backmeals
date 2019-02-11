@@ -58,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bwg-Ab-k3l">
-                                <rect key="frame" x="-2" y="54" width="377" height="516"/>
+                                <rect key="frame" x="-2" y="54" width="377" height="564"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.51372549020000002" green="0.74509803919999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,22 +102,12 @@
                                     <constraint firstAttribute="width" constant="375" id="J9K-Bu-EWe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fEy-bz-fTX" customClass="GADBannerView">
-                                <rect key="frame" x="27.5" y="568" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="NCE-dL-scd"/>
-                                    <constraint firstAttribute="height" constant="50" id="j84-la-YES"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.51372549019607838" green="0.74509803921568629" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fEy-bz-fTX" firstAttribute="top" secondItem="Bwg-Ab-k3l" secondAttribute="bottom" constant="-2" id="2Px-sS-cZt"/>
-                            <constraint firstItem="fEy-bz-fTX" firstAttribute="centerX" secondItem="Lpq-s6-aLp" secondAttribute="centerX" id="56T-VF-V9B"/>
                             <constraint firstItem="Lpq-s6-aLp" firstAttribute="leading" secondItem="Bwg-Ab-k3l" secondAttribute="leading" constant="2" id="Bex-7e-LwR"/>
-                            <constraint firstItem="Lpq-s6-aLp" firstAttribute="bottom" secondItem="fEy-bz-fTX" secondAttribute="bottom" id="ZnX-en-asW"/>
+                            <constraint firstItem="Lpq-s6-aLp" firstAttribute="bottom" secondItem="Bwg-Ab-k3l" secondAttribute="bottom" id="Zbk-YA-sbd"/>
                             <constraint firstItem="Lpq-s6-aLp" firstAttribute="trailing" secondItem="Bwg-Ab-k3l" secondAttribute="trailing" id="jMX-10-gkW"/>
                             <constraint firstItem="Lpq-s6-aLp" firstAttribute="top" secondItem="Bwg-Ab-k3l" secondAttribute="top" constant="10" id="phB-AB-8Mx"/>
                             <constraint firstItem="IyX-mz-zGd" firstAttribute="centerX" secondItem="Lpq-s6-aLp" secondAttribute="centerX" id="raW-h5-WUV"/>
@@ -141,14 +131,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="EmptyShoppinglistView" destination="IyX-mz-zGd" id="Os3-S4-1hQ"/>
-                        <outlet property="Mybanner" destination="fEy-bz-fTX" id="Eqk-fD-YFj"/>
                         <outlet property="ShoppingListTable" destination="Bwg-Ab-k3l" id="Kif-Cx-0qk"/>
                         <segue destination="T6N-iX-cNA" kind="show" id="ven-1B-icU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D05-MO-2KR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802.39999999999998" y="1867.9802955665025"/>
+            <point key="canvasLocation" x="802.39999999999998" y="1867.9160419790107"/>
         </scene>
         <!--Backpack-->
         <scene sceneID="phZ-SL-epj">
@@ -246,7 +235,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oCV-CA-PnI">
-                                <rect key="frame" x="0.0" y="54" width="375" height="454"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="504"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.51372549020000002" green="0.74509803919999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -294,16 +283,8 @@
                                     <constraint firstAttribute="height" constant="148" id="YO3-mb-YkA"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwX-Pl-2BB" customClass="GADBannerView">
-                                <rect key="frame" x="27.5" y="568" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="Plc-J8-evb"/>
-                                    <constraint firstAttribute="height" constant="50" id="Vp9-Ec-utB"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oU2-jm-xDE">
-                                <rect key="frame" x="0.0" y="508" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="558" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chefs recommendation:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoC-pu-dMb">
                                         <rect key="frame" x="8" y="8" width="359" height="20"/>
@@ -334,11 +315,9 @@
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="a8A-2c-gra" firstAttribute="trailing" secondItem="oCV-CA-PnI" secondAttribute="trailing" id="0dZ-9J-9yy"/>
-                            <constraint firstItem="lwX-Pl-2BB" firstAttribute="centerX" secondItem="a8A-2c-gra" secondAttribute="centerX" id="2Ub-l8-bVa"/>
-                            <constraint firstItem="a8A-2c-gra" firstAttribute="bottom" secondItem="lwX-Pl-2BB" secondAttribute="bottom" id="JBI-5l-XbR"/>
                             <constraint firstItem="wWN-XU-vvd" firstAttribute="centerX" secondItem="a8A-2c-gra" secondAttribute="centerX" id="Yiv-tK-hfN"/>
                             <constraint firstItem="oU2-jm-xDE" firstAttribute="centerX" secondItem="a8A-2c-gra" secondAttribute="centerX" id="fPW-g1-iWs"/>
-                            <constraint firstItem="lwX-Pl-2BB" firstAttribute="top" secondItem="oU2-jm-xDE" secondAttribute="bottom" id="gzJ-aR-aEi"/>
+                            <constraint firstItem="a8A-2c-gra" firstAttribute="bottom" secondItem="oU2-jm-xDE" secondAttribute="bottom" id="fRA-vh-E2S"/>
                             <constraint firstItem="wWN-XU-vvd" firstAttribute="centerY" secondItem="a8A-2c-gra" secondAttribute="centerY" id="iPq-XG-54H"/>
                             <constraint firstItem="a8A-2c-gra" firstAttribute="top" secondItem="oCV-CA-PnI" secondAttribute="top" constant="10" id="ihR-z1-j8a"/>
                             <constraint firstItem="oU2-jm-xDE" firstAttribute="top" secondItem="oCV-CA-PnI" secondAttribute="bottom" id="jxt-qY-oAX"/>
@@ -366,7 +345,6 @@
                         <outlet property="CupboardTable" destination="oCV-CA-PnI" id="YwY-pX-8Tp"/>
                         <outlet property="CupboardTableView" destination="oCV-CA-PnI" id="R3m-CU-X9M"/>
                         <outlet property="EmptyBackpackView" destination="wWN-XU-vvd" id="Go0-Ui-D0v"/>
-                        <outlet property="Mybanner" destination="lwX-Pl-2BB" id="P6q-Kp-RTV"/>
                         <outlet property="RecommendedMealOutlet" destination="2rP-8X-aYf" id="JoO-Fa-nGQ"/>
                         <segue destination="MhD-il-mbL" kind="show" id="QxO-ib-Jvl"/>
                         <segue destination="kuL-fu-tW4" kind="show" identifier="GoToRecipeDetailsFromBackpack" id="A8E-op-aWW"/>
@@ -704,7 +682,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j4b-UO-Qh0">
-                                <rect key="frame" x="0.0" y="54" width="375" height="514"/>
+                                <rect key="frame" x="0.0" y="54" width="375" height="564"/>
                                 <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.51372549020000002" green="0.74509803919999995" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -749,24 +727,14 @@
                                     <constraint firstAttribute="height" constant="148" id="h1F-mf-whj"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVB-4o-w9D" customClass="GADBannerView">
-                                <rect key="frame" x="27.5" y="568" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="mho-SF-4iD"/>
-                                    <constraint firstAttribute="height" constant="50" id="zW8-ER-8Nd"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.51372549019607838" green="0.74509803921568629" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="j4b-UO-Qh0" firstAttribute="leading" secondItem="98p-Fp-ZyD" secondAttribute="leading" id="55o-t6-rKU"/>
-                            <constraint firstItem="98p-Fp-ZyD" firstAttribute="bottom" secondItem="IVB-4o-w9D" secondAttribute="bottom" id="AI2-py-9f0"/>
                             <constraint firstItem="9nh-hC-KyR" firstAttribute="centerY" secondItem="98p-Fp-ZyD" secondAttribute="centerY" id="Ib2-Zi-sL0"/>
-                            <constraint firstItem="IVB-4o-w9D" firstAttribute="centerX" secondItem="98p-Fp-ZyD" secondAttribute="centerX" id="ig0-6L-Kmh"/>
+                            <constraint firstItem="98p-Fp-ZyD" firstAttribute="bottom" secondItem="j4b-UO-Qh0" secondAttribute="bottom" id="aLK-wj-bec"/>
                             <constraint firstItem="9nh-hC-KyR" firstAttribute="centerX" secondItem="98p-Fp-ZyD" secondAttribute="centerX" id="oH8-Gd-b6h"/>
-                            <constraint firstItem="IVB-4o-w9D" firstAttribute="top" secondItem="j4b-UO-Qh0" secondAttribute="bottom" id="qWu-Y5-vPx"/>
                             <constraint firstItem="98p-Fp-ZyD" firstAttribute="top" secondItem="j4b-UO-Qh0" secondAttribute="top" constant="10" id="rn1-mq-ZDk"/>
                             <constraint firstItem="98p-Fp-ZyD" firstAttribute="trailing" secondItem="j4b-UO-Qh0" secondAttribute="trailing" id="u1K-LP-See"/>
                         </constraints>
@@ -789,7 +757,6 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="Mybanner" destination="IVB-4o-w9D" id="qTw-OY-D7L"/>
                         <outlet property="NoRecipesLabel" destination="fA6-fX-Hxn" id="mNL-th-RE1"/>
                         <outlet property="NoRecipesView" destination="9nh-hC-KyR" id="4iy-MN-ZHS"/>
                         <outlet property="RecepiesTableView" destination="j4b-UO-Qh0" id="uIf-hC-ErX"/>
@@ -799,7 +766,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fe-SC-gGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802.39999999999998" y="214.28571428571431"/>
+            <point key="canvasLocation" x="802.39999999999998" y="213.64317841079463"/>
         </scene>
         <!--Recepie Detail View Controller-->
         <scene sceneID="aG3-dj-hZh">
@@ -1343,9 +1310,9 @@ AAAAAAAAAAAALHU
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ven-1B-icU"/>
-        <segue reference="GW0-hr-wP9"/>
+        <segue reference="A8E-op-aWW"/>
         <segue reference="hY7-nP-AR0"/>
         <segue reference="QxO-ib-Jvl"/>
-        <segue reference="crb-3B-lpa"/>
+        <segue reference="yhA-E4-BVL"/>
     </inferredMetricsTieBreakers>
 </document>

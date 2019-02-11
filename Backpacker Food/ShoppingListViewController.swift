@@ -13,7 +13,7 @@ var Shoppinglist: [String] = []
 
 
 
-class ShoppingListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GADBannerViewDelegate {
+class ShoppingListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     @IBOutlet weak var ShoppingListTable: UITableView!
@@ -21,7 +21,7 @@ class ShoppingListViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var EmptyShoppinglistView: UIView!
     
     
-    @IBOutlet weak var Mybanner: GADBannerView!
+    //@IBOutlet weak var Mybanner: GADBannerView!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Shoppinglist.count
@@ -122,14 +122,14 @@ func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEdi
         self.ShoppingListTable.tableFooterView = UIView()
         
         //REquest
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID, "042A0B3BD2278001419902288093126736463A5764274669"]
-        
-        //Set up ad
-        Mybanner.adUnitID = "ca-app-pub-9665154923016795/2227614846"
-        Mybanner.rootViewController = self
-        Mybanner.delegate = self
-        Mybanner.load(request)
+//        let request = GADRequest()
+//        request.testDevices = [kGADSimulatorID, "042A0B3BD2278001419902288093126736463A5764274669"]
+//
+//        //Set up ad
+//        Mybanner.adUnitID = "ca-app-pub-9665154923016795/2227614846"
+//        Mybanner.rootViewController = self
+//        Mybanner.delegate = self
+//        Mybanner.load(request)
         
         
         

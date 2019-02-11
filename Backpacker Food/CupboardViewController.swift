@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GoogleMobileAds
+//import GoogleMobileAds
 
 //Declared out here so it can be accessed by the Recepie detail viewcontroller class
 //var CupboardItems:[String] = ["Currypowder", "Lentils", "Tomatoes", "Salt", "Spaghetti", "Frozen Vegetables"]
@@ -18,10 +18,10 @@ var CupboardItems: [String] = []
 
 
 
-class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDataSource,  GADBannerViewDelegate {
+class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
     
     //ADS
-    @IBOutlet weak var Mybanner: GADBannerView!
+    //@IBOutlet weak var Mybanner: GADBannerView!
     
     
     //FUNCTIONALITY
@@ -93,7 +93,7 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
                     print("123 recipe score:   ", RecipeScore)
                     
                     
-                    if(RecipeScore <= BestRecipeScore){
+                    if(RecipeScore <= BestRecipeScore && RecipeScore != LocalRecipes![i-1].Ingredients.count){
                         //RecipeScore -= 1
                         //recommendedDishString = LocalRecipes![i-1].Name!
                         recommendedDishElement = LocalRecipes![i-1]
@@ -136,16 +136,16 @@ class CupboardViewController: UIViewController, UITabBarDelegate, UITableViewDat
         self.CupboardTable.tableFooterView = UIView()
         
         
-        //REquest
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID, "042A0B3BD2278001419902288093126736463A5764274669"]
-        
-        //Set up ad
-        // TESTAD Mybanner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-        Mybanner.adUnitID = "ca-app-pub-9665154923016795/9851201415"
-        Mybanner.rootViewController = self
-        Mybanner.delegate = self
-        Mybanner.load(request)
+//        //REquest
+//        let request = GADRequest()
+//        request.testDevices = [kGADSimulatorID, "042A0B3BD2278001419902288093126736463A5764274669"]
+//
+//        //Set up ad
+//        // TESTAD Mybanner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+//        Mybanner.adUnitID = "ca-app-pub-9665154923016795/9851201415"
+//        Mybanner.rootViewController = self
+//        Mybanner.delegate = self
+//        Mybanner.load(request)
         
     }
     
